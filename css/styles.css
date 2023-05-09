@@ -9,22 +9,25 @@ body {
     background-color: #BF202F;
 }
 
+.navbar {
+    background-color: #101010;
+    font-family: 'Averia Serif Libre', cursive;
+}
+
 .nav-link {
     color: white;
+    padding-bottom: 20%;
 }
 
 .nav-link:hover {
     color: #BF202F;
     background-color: black;
+    border: white 2px solid;
 }
 
 h1, h2, h3 {
     font-family: 'Blaka', bold;
     color: white;
-}
-
-h1 {
-    /* font-size: 200px; */
 }
 
 p {
@@ -35,4 +38,10 @@ p {
 
 div {
     text-align: center;
+}
+
+.footer {
+    margin-top: 10%;
+    margin-bottom: 0;
+    background-color: #101010;
 }
