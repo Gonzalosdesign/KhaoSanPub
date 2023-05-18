@@ -7,6 +7,7 @@ verde inglés #1E3827
 
 body {
     background-color: #BF202F;
+    font-family: 'Averia Serif Libre';
 }
 
 .navbar {
@@ -30,16 +31,47 @@ h1, h2, h3 {
     color: white;
 }
 
-p {
-    font-family: 'Averia Serif Libre';
-    /* font-size: 40px; */
+.menuGallery {
+    margin: 2%;
+    padding: 2%;
+    border: white 6px solid;
+    background-color: #101010;
+    color: white;
 }
 
-
-div {
-    text-align: center;
+form {
+    display: grid;
+    margin: 2%;
+    padding: 2%;
+    border: white 6px solid;
+    background-color: #101010;
+    color: white;
 }
 
+label {
+    color: white;
+    margin-top: 2%;
+}
+
+.btn {
+    padding: 1%;
+    width: 50%;
+    margin: auto;
+    margin-top: 5%;
+    background-color: #1E3827;
+    border: solid 1px white;
+    font-size: larger;
+    color: white;
+}
+
+.btn:hover{
+    background-color:#BF202F;
+    border: solid 1px white;
+    border-radius: 20px;
+    font-weight: bolder;
+    letter-spacing: 1cap;
+    width: 100%;
+}
 .footer {
     margin-top: 10%;
     margin-bottom: 0;
