@@ -49,7 +49,7 @@ imprimir.addEventListener("click", (e) => {
         for (i = 0 ; i < menu.length;  i++){
             let div = document.createElement("div");
             div.innerHTML = `<p>Producto: ${menu[i].nombre}, Precio: ${menu[i].precio}</p>`;
-            div.className = `producto`;
+            div.className = `col-3 producto`;
             areaImpresion.append(div);
         };
     };
