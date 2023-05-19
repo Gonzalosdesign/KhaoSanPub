@@ -72,6 +72,20 @@ label {
     letter-spacing: 1cap;
     width: 100%;
 }
+
+.producto {
+    border: 1px solid white;
+    color: #BF202F;
+    background-color: black;
+    text-align: center;
+    width: 50%;
+    margin: 2%;
+    padding: 2%;
+}
+
+.areaImpresion {
+    text-align: center;
+}
 .footer {
     margin-top: 10%;
     margin-bottom: 0;

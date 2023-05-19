@@ -12,10 +12,10 @@
 - about
 */
 
+let id = 1;
 let menu = [];
 let carrito = [];
 let menuGallery = document.getElementById("menuGallery");
-// menuGallery.innerHTML = "hola mundo";
 let formAgregarMenu = document.getElementById("formAgregarMenu");
 console.log();
 
@@ -32,16 +32,25 @@ formAgregarMenu.addEventListener("submit", (e) => {
     e.preventDefault();
 
     let input = e.target.children;
-    let producto = new Productos (input[0].value, input[1].value, input[2].value, input[3].value);
+    let producto = new Productos (id, input[1].value, input[3].value, input[5].value);
     menu.push(producto);
-    console.log(`Usted ha ingresado el producto: ${producto.nombre}`);
+    id = menu.length + 1;
+    console.log(`Usted ha ingresado el producto: ${producto.id}, nombre: ${producto.nombre}, con precio: ${producto.precio}`);
 });
 
-let imprimir = document.getElementById("imprimirMenu");
+let imprimir = document.getElementById("imprimir");
+let areaImpresion = document.getElementById("areaImpresion");
+
 imprimir.addEventListener("click", (e) => {
-    function imprimirMenu() {
+
+    menu.length === 0 ? alert("Aún no hay productos en el menú") : imprimirProducto();
+
+    function imprimirProducto(){
         for (i = 0 ; i < menu.length;  i++){
-            console.log(menu[i].nombre);
+            let div = document.createElement("div");
+            div.innerHTML = `<p>Producto: ${menu[i].nombre}, Precio: ${menu[i].precio}</p>`;
+            div.className = `producto`;
+            areaImpresion.append(div);
         };
     };
-})
+});
