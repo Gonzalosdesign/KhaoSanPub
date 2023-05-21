@@ -46,6 +46,7 @@ imprimir.addEventListener("click", (e) => {
     menu.length === 0 ? alert("Aún no hay productos en el menú") : imprimirProducto();
 
     function imprimirProducto(){
+        areaImpresion.innerHTML = "";
         for (i = 0 ; i < menu.length;  i++){
             let div = document.createElement("div");
             div.innerHTML = `<p>Producto: ${menu[i].nombre}, Precio: ${menu[i].precio}</p>`;

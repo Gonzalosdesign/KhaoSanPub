@@ -55,7 +55,6 @@ label {
 
 .btn {
     padding: 1%;
-    width: 50%;
     margin: auto;
     margin-top: 5%;
     background-color: #1E3827;
@@ -70,21 +69,17 @@ label {
     border-radius: 20px;
     font-weight: bolder;
     letter-spacing: 1cap;
-    width: 100%;
 }
 
 .producto {
     border: 1px solid white;
-    color: #BF202F;
+    color: white;
     background-color: black;
     text-align: center;
     margin: 2%;
     padding: 2%;
 }
 
-.areaImpresion {
-    text-align: center;
-}
 .footer {
     margin-top: 10%;
     margin-bottom: 0;
