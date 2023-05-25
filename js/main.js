@@ -19,14 +19,14 @@ let menuGallery = document.getElementById("menuGallery");
 let formAgregarMenu = document.getElementById("formAgregarMenu");
 console.log();
 
-class Productos {
-    constructor(id, nombre, precio, img){
-        this.id = id;
-        this.nombre = nombre;
-        this.precio = precio;
-        this.img = img;
-    }
-};
+// class Productos {
+//     constructor(id, nombre, precio, img){
+//         this.id = id;
+//         this.nombre = nombre;
+//         this.precio = precio;
+//         this.img = img;
+//     }
+// };
 
 formAgregarMenu.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -40,6 +40,11 @@ formAgregarMenu.addEventListener("submit", (e) => {
 
 let imprimir = document.getElementById("imprimir");
 let areaImpresion = document.getElementById("areaImpresion");
+
+// let img = document.createElement("img");
+//             // img.src = `${menu[i].img}`;
+//             img.src = "/img/menu/panang salmon.png";
+//             document.areaImpresion.append(img);
 
 imprimir.addEventListener("click", (e) => {
 
