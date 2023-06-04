@@ -13,11 +13,12 @@ body {
 .navbar {
     background-color: #101010;
     font-family: 'Averia Serif Libre', cursive;
+    min-height: 6rem;
 }
 
 .nav-link {
     color: white;
-    padding-bottom: 20%;
+    margin: auto;
 }
 
 .nav-link:hover {
