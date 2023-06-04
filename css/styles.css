@@ -4,26 +4,19 @@ ladrillo #A52922
 tinto #580F1B
 verde inglés #1E3827
 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 body {
     background-color: #BF202F;
     font-family: 'Averia Serif Libre';
 }
 
-.navbar {
-    background-color: #101010;
-    font-family: 'Averia Serif Libre', cursive;
-}
-
-.nav-link {
-    color: white;
-    padding-bottom: 20%;
-}
-
-.nav-link:hover {
+a:hover {
     color: #BF202F;
-    background-color: black;
-    border: white 2px solid;
 }
 
 h1, h2, h3 {
@@ -31,57 +24,52 @@ h1, h2, h3 {
     color: white;
 }
 
-.menuGallery {
-    margin: 2%;
-    padding: 2%;
-    border: white 6px solid;
-    background-color: #101010;
-    color: white;
-}
 
-form {
+nav { grid-area: nav; }
+main { grid-area: main; }
+.left{ grid-area: left; }
+.right { grid-area: right; }
+.left2{ grid-area: left2; }
+.right2 { grid-area: right2; }
+footer { grid-area: footer; }
+
+.grid-container {
     display: grid;
-    margin: 2%;
-    padding: 2%;
-    border: white 6px solid;
-    background-color: #101010;
-    color: white;
+    grid-template-areas:
+    'nav nav nav nav nav nav'
+    'main main main main main main'
+    'left left left right right right'
+    'left2 left2 left2 right2 right2 right2'
+    'footer footer footer footer footer footer';
 }
 
-label {
-    color: white;
-    margin-top: 2%;
-}
-
-.btn {
-    padding: 1%;
+main, section {
     margin: auto;
-    margin-top: 5%;
-    background-color: #1E3827;
-    border: solid 1px white;
-    font-size: larger;
-    color: white;
 }
 
-.btn:hover{
-    background-color:#BF202F;
-    border: solid 1px white;
-    border-radius: 20px;
-    font-weight: bolder;
-    letter-spacing: 1cap;
+section h2, p {
+    padding: 2% 5%;
 }
 
-.producto {
-    border: 1px solid white;
-    color: white;
+.linkGrid {
     background-color: #101010;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
     text-align: center;
-    margin: 2%;
-    padding: 2%;
+    min-height: 5rem;
+    align-items: center;
 }
 
-.footer {
-    margin-top: 10%;
-    margin-bottom: 0;
-    background-color: #101010;
+.linkGrid a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.linkGrid a:hover {
+    color: #BF202F;   
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
 }
